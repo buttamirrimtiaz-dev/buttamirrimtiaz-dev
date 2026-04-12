@@ -122,16 +122,31 @@
     <div class="section-heading">
       <h1 class="title wow fadeInDown" data-wow-delay=".3s">Selected Projects</h1>
       <p class="wow fadeInDown" data-wow-delay=".5s">
-        A selection of real-world products I've architected and built — spanning AI platforms,<br>
-        SaaS applications, healthcare systems, and more.
+        20+ real-world products across AI, SaaS, HealthTech, EdTech, PropTech and more.<br>
+        Filter by industry to explore what I've built.
       </p>
     </div>
-    <div class="row">
 
-      <div class="col-md-4 col-sm-6">
-        <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+    <!-- Filter Buttons -->
+    <div class="portfolio-filter text-center wow fadeInDown" data-wow-delay=".3s">
+      <button class="btn-filter active" data-filter="all">All</button>
+      <button class="btn-filter" data-filter="ai-saas">AI &amp; SaaS</button>
+      <button class="btn-filter" data-filter="edtech">EdTech</button>
+      <button class="btn-filter" data-filter="healthcare">HealthTech</button>
+      <button class="btn-filter" data-filter="realestate">PropTech</button>
+      <button class="btn-filter" data-filter="musictech">MusicTech</button>
+      <button class="btn-filter" data-filter="fintech">Fintech &amp; Social</button>
+      <button class="btn-filter" data-filter="geospatial">Geospatial</button>
+      <button class="btn-filter" data-filter="logistics">Logistics</button>
+    </div>
+
+    <div class="row" id="portfolio-grid">
+
+      <!-- METAGEO — Geospatial -->
+      <div class="col-md-4 col-sm-6 portfolio-col" data-filter="geospatial">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="0ms">
           <div class="img-wrapper">
-            <img src="images/portfolio/item-1.jpg" class="img-fluid" alt="METAGEO">
+            <img src="images/portfolio/portfolio_project_image.jpg" class="img-fluid" alt="METAGEO">
             <div class="overlay">
               <div class="buttons">
                 <a target="_blank" href="https://metageo.io/">Live Site</a>
@@ -140,15 +155,36 @@
           </div>
           <figcaption>
             <h4><a href="https://metageo.io/" target="_blank">METAGEO</a></h4>
-            <p>Next-gen 2D/3D map platform &mdash; React, Node.js, PostgreSQL, PostGIS</p>
+            <p class="project-desc">Next-gen map platform simultaneously displaying 2D &amp; 3D location-based data — photos, point clouds, and 3D models in open-source formats. Open to the public as a beta product.</p>
+            <p class="tech-stack">Stack: <span>React JS, Node.js, PostgreSQL, PostGIS</span></p>
           </figcaption>
         </figure>
       </div>
 
-      <div class="col-md-4 col-sm-6">
-        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+      <!-- EMR System — HealthTech -->
+      <div class="col-md-4 col-sm-6 portfolio-col" data-filter="healthcare">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="100ms">
           <div class="img-wrapper">
-            <img src="images/portfolio/item-2.jpg" class="img-fluid" alt="Gateless">
+            <img src="images/portfolio/portfolio_project_image.jpg" class="img-fluid" alt="EMR System">
+            <div class="overlay">
+              <div class="buttons">
+                <a target="_blank" href="https://southernskiesdermatology.com/">Live Site</a>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <h4><a href="https://southernskiesdermatology.com/" target="_blank">EMR System</a></h4>
+            <p class="project-desc">HIPAA-compliant document &amp; image management system storing patient medical records as photos on Google Drive. Built for a dermatology practice.</p>
+            <p class="tech-stack">Stack: <span>React JS, Node.js, MongoDB, AWS</span></p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Gateless — MusicTech -->
+      <div class="col-md-4 col-sm-6 portfolio-col" data-filter="musictech">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="200ms">
+          <div class="img-wrapper">
+            <img src="images/portfolio/portfolio_project_image.jpg" class="img-fluid" alt="Gateless">
             <div class="overlay">
               <div class="buttons">
                 <a target="_blank" href="https://g8lessmusic.co/login">Live Site</a>
@@ -157,32 +193,55 @@
           </div>
           <figcaption>
             <h4><a href="https://g8lessmusic.co/login" target="_blank">Gateless (G8LESS)</a></h4>
-            <p>Real-time music collaboration SaaS &mdash; Next.js, Node.js, PostgreSQL, AWS, WebSockets</p>
+            <p class="project-desc">Online collaborative songwriting SaaS where artists, producers, and music professionals share and work on unreleased productions in real time. Bridges songwriters, A&amp;R, labels, and distributors.</p>
+            <p class="tech-stack">Stack: <span>Next.js, Node.js, PostgreSQL, AWS, WebSockets</span></p>
           </figcaption>
         </figure>
       </div>
 
-      <div class="col-md-4 col-sm-6">
-        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
+      <!-- HiReturn Filter — PropTech -->
+      <div class="col-md-4 col-sm-6 portfolio-col" data-filter="realestate">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
           <div class="img-wrapper">
-            <img src="images/portfolio/item-3.jpg" class="img-fluid" alt="Simplitaught">
+            <img src="images/portfolio/portfolio_project_image.jpg" class="img-fluid" alt="HiReturn Filter">
             <div class="overlay">
               <div class="buttons">
-                <a target="_blank" href="https://www.simplitaught.com">Live Site</a>
+                <a target="_blank" href="https://hi-return.info/">Live Site</a>
               </div>
             </div>
           </div>
           <figcaption>
-            <h4><a href="https://www.simplitaught.com" target="_blank">SimpliTaught</a></h4>
-            <p>AI/ML-powered EdTech platform &mdash; Next.js, TypeScript, Node.js, PostgreSQL, GCP</p>
+            <h4><a href="https://hi-return.info/" target="_blank">HiReturn Filter</a></h4>
+            <p class="project-desc">Property rating PWA guiding users through sequential factors to produce a compiled property score. Available on desktop and mobile with a fully custom UI design.</p>
+            <p class="tech-stack">Stack: <span>Vue.js, Tailwind CSS, VentraIP</span></p>
           </figcaption>
         </figure>
       </div>
 
-      <div class="col-md-4 col-sm-6">
-        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
+      <!-- Skayle 360 — EdTech -->
+      <div class="col-md-4 col-sm-6 portfolio-col" data-filter="edtech">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="400ms">
           <div class="img-wrapper">
-            <img src="images/portfolio/item-4.jpg" class="img-fluid" alt="Hirsch Associates">
+            <img src="images/portfolio/portfolio_project_image.jpg" class="img-fluid" alt="Skayle 360">
+            <div class="overlay">
+              <div class="buttons">
+                <a target="_blank" href="https://skayle360.com/">Live Site</a>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <h4><a href="https://skayle360.com/" target="_blank">Skayle 360</a></h4>
+            <p class="project-desc">Training platform offering workshops, custom programmes, and speaking engagements to drive business growth. Harnesses Marketing, Sales, HR, and AI for breakthrough results.</p>
+            <p class="tech-stack">Stack: <span>WordPress, PHP, Stripe</span></p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Hirsch & Associates — PropTech -->
+      <div class="col-md-4 col-sm-6 portfolio-col" data-filter="realestate">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="500ms">
+          <div class="img-wrapper">
+            <img src="images/portfolio/portfolio_project_image.jpg" class="img-fluid" alt="Hirsch & Associates">
             <div class="overlay">
               <div class="buttons">
                 <a target="_blank" href="https://thehirschapp.ca/brokers">Live Site</a>
@@ -191,15 +250,36 @@
           </div>
           <figcaption>
             <h4><a href="https://thehirschapp.ca/brokers" target="_blank">Hirsch &amp; Associates</a></h4>
-            <p>Real estate consulting platform &mdash; React, Node.js, Apollo GraphQL, MongoDB, AWS</p>
+            <p class="project-desc">Full-service real estate consulting firm supporting clients across the entire development lifecycle — from ideation to execution. Crafts strategic sales solutions to maximise revenue.</p>
+            <p class="tech-stack">Stack: <span>React, Node.js, Apollo GraphQL, MongoDB, AWS</span></p>
           </figcaption>
         </figure>
       </div>
 
-      <div class="col-md-4 col-sm-6">
-        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="900ms">
+      <!-- SimpliTaught — EdTech -->
+      <div class="col-md-4 col-sm-6 portfolio-col" data-filter="edtech">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
           <div class="img-wrapper">
-            <img src="images/portfolio/item-5.jpg" class="img-fluid" alt="PrognosUs">
+            <img src="images/portfolio/portfolio_project_image.jpg" class="img-fluid" alt="SimpliTaught">
+            <div class="overlay">
+              <div class="buttons">
+                <a target="_blank" href="https://www.simplitaught.com">Live Site</a>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <h4><a href="https://www.simplitaught.com" target="_blank">SimpliTaught</a></h4>
+            <p class="project-desc">AI/ML-powered content curation platform recommending personalised digital resources tied to textbook concepts down to chapter level. Bridges learning gaps for students, educators, and institutions.</p>
+            <p class="tech-stack">Stack: <span>Next.js, TypeScript, Node.js, PostgreSQL, Nginx, GCP</span></p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- PrognosUs — HealthTech -->
+      <div class="col-md-4 col-sm-6 portfolio-col" data-filter="healthcare">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="700ms">
+          <div class="img-wrapper">
+            <img src="images/portfolio/portfolio_project_image.jpg" class="img-fluid" alt="PrognosUs">
             <div class="overlay">
               <div class="buttons">
                 <a target="_blank" href="https://app.prognosus.com/">Live Site</a>
@@ -208,15 +288,36 @@
           </div>
           <figcaption>
             <h4><a href="https://app.prognosus.com/" target="_blank">PrognosUs</a></h4>
-            <p>Healthcare social impact platform &mdash; AWS Amplify, React, GraphQL, Node.js, DynamoDB</p>
+            <p class="project-desc">Tech-enabled community supporting family caregivers of people living with dementia. Offers moderated chat by health workers, testimony sharing, and educational resources.</p>
+            <p class="tech-stack">Stack: <span>AWS Amplify, React, GraphQL, Node.js, DynamoDB</span></p>
           </figcaption>
         </figure>
       </div>
 
-      <div class="col-md-4 col-sm-6">
-        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+      <!-- KeyLeads — PropTech -->
+      <div class="col-md-4 col-sm-6 portfolio-col" data-filter="realestate">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="800ms">
           <div class="img-wrapper">
-            <img src="images/portfolio/item-6.jpg" class="img-fluid" alt="SKOOL'd Tutors">
+            <img src="images/portfolio/portfolio_project_image.jpg" class="img-fluid" alt="KeyLeads">
+            <div class="overlay">
+              <div class="buttons">
+                <a target="_blank" href="https://app2.keyleads.com/">Live Site</a>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <h4><a href="https://app2.keyleads.com/" target="_blank">KeyLeads</a></h4>
+            <p class="project-desc">Lead-generation platform for real estate agents focused on acquiring motivated seller leads from distressed properties — pre-foreclosure, divorce, and estate sales.</p>
+            <p class="tech-stack">Stack: <span>Bubble.io, Stripe</span></p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- SKOOL'd Tutors — EdTech -->
+      <div class="col-md-4 col-sm-6 portfolio-col" data-filter="edtech">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="900ms">
+          <div class="img-wrapper">
+            <img src="images/portfolio/portfolio_project_image.jpg" class="img-fluid" alt="SKOOL'd Tutors">
             <div class="overlay">
               <div class="buttons">
                 <a target="_blank" href="https://www.skooldtutors.com/">Live Site</a>
@@ -224,8 +325,181 @@
             </div>
           </div>
           <figcaption>
-            <h4><a href="https://www.skooldtutors.com/" target="_blank">SKOOL'd Tutors</a></h4>
-            <p>Online tutoring marketplace &mdash; React, Node.js, Twilio, Stripe, Google Calendar, PostgreSQL</p>
+            <h4><a href="https://www.skooldtutors.com/" target="_blank">SKOOL&rsquo;d Tutors</a></h4>
+            <p class="project-desc">Platform connecting students with virtual or in-person tutors for personalised, flexible learning. Handles scheduling, payments, and video sessions end-to-end.</p>
+            <p class="tech-stack">Stack: <span>React, Node.js, Twilio, Stripe, Google Calendar, PostgreSQL</span></p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- CloseMore — Fintech -->
+      <div class="col-md-4 col-sm-6 portfolio-col" data-filter="fintech">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="1000ms">
+          <div class="img-wrapper">
+            <img src="images/portfolio/portfolio_project_image.jpg" class="img-fluid" alt="CloseMore">
+            <div class="overlay">
+              <div class="buttons">
+                <a target="_blank" href="https://closemore.com/">Live Site</a>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <h4><a href="https://closemore.com/" target="_blank">CloseMore</a></h4>
+            <p class="project-desc">Membership and coaching platform offering investment resources, personalised coaching, and proprietary strategies. Helps members scale their business and investment portfolios.</p>
+            <p class="tech-stack">Stack: <span>Bubble.io, Stripe, Twilio, OpenAI</span></p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Heavenly Match — Fintech/Social -->
+      <div class="col-md-4 col-sm-6 portfolio-col" data-filter="fintech">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="1100ms">
+          <div class="img-wrapper">
+            <img src="images/portfolio/portfolio_project_image.jpg" class="img-fluid" alt="Heavenly Match">
+            <div class="overlay">
+              <div class="buttons">
+                <a target="_blank" href="https://heavenlymatch.org/">Live Site</a>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <h4><a href="https://heavenlymatch.org/" target="_blank">Heavenly Match</a></h4>
+            <p class="project-desc">Matchmaking and dating service exclusively for Muslims in the United States and Canada. Provides a safe, culturally aligned platform for meaningful connections.</p>
+            <p class="tech-stack">Stack: <span>AWS Amplify, React, GraphQL, Node.js, DynamoDB, Stripe</span></p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Rate Freight Brokers — Logistics -->
+      <div class="col-md-4 col-sm-6 portfolio-col" data-filter="logistics">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+          <div class="img-wrapper">
+            <img src="images/portfolio/portfolio_project_image.jpg" class="img-fluid" alt="Rate Freight Brokers">
+            <div class="overlay">
+              <div class="buttons">
+                <span style="color:#fff;font-size:13px;padding:10px 20px;border:1px solid #fff;display:inline-block;">NDA / Private</span>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <h4>Rate Freight Brokers</h4>
+            <p class="project-desc">Platform where truck drivers and dispatchers share reviews and feedback on freight brokers. Fosters transparency, accountability, and awareness across the freight industry.</p>
+            <p class="tech-stack">Stack: <span>AWS Amplify, React, GraphQL, Node.js, DynamoDB, Stripe</span></p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Papaya Tutor — EdTech -->
+      <div class="col-md-4 col-sm-6 portfolio-col" data-filter="edtech">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="1300ms">
+          <div class="img-wrapper">
+            <img src="images/portfolio/portfolio_project_image.jpg" class="img-fluid" alt="Papaya Tutor">
+            <div class="overlay">
+              <div class="buttons">
+                <a target="_blank" href="https://papayatutor.com/">Live Site</a>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <h4><a href="https://papayatutor.com/" target="_blank">Papaya Tutor</a></h4>
+            <p class="project-desc">Connects students with bilingual tutors for personalised, exceptional support regardless of background or academic level. Delivers customised tutoring through live video sessions.</p>
+            <p class="tech-stack">Stack: <span>Node.js, AWS, MongoDB, Daily.co</span></p>
+          </figcaption>
+        </figure>
+      </div>
+
+
+      <!-- OrbitX — AI & SaaS -->
+      <div class="col-md-4 col-sm-6 portfolio-col" data-filter="ai-saas">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="1500ms">
+          <div class="img-wrapper">
+            <img src="images/portfolio/portfolio_project_image.jpg" class="img-fluid" alt="OrbitX">
+            <div class="overlay">
+              <div class="buttons">
+                <span style="color:#fff;font-size:13px;padding:10px 20px;border:1px solid #fff;display:inline-block;">NDA / Private</span>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <h4>OrbitX</h4>
+            <p class="project-desc">SaaS MVP for automated risk and compliance management with NLP-driven threat detection and regulatory monitoring. Built for industrial cybersecurity aligned with international standards.</p>
+            <p class="tech-stack">Stack: <span>Node.js, PostgreSQL, AWS, Python, Elasticsearch, Next.js, Nozomi Networks</span></p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- smArtist — AI & SaaS / MusicTech -->
+      <div class="col-md-4 col-sm-6 portfolio-col" data-filter="ai-saas musictech">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="1600ms">
+          <div class="img-wrapper">
+            <img src="images/portfolio/portfolio_project_image.jpg" class="img-fluid" alt="smArtist">
+            <div class="overlay">
+              <div class="buttons">
+                <span style="color:#fff;font-size:13px;padding:10px 20px;border:1px solid #fff;display:inline-block;">NDA / Private</span>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <h4>smArtist</h4>
+            <p class="project-desc">AI-driven SaaS enabling brands, agencies, and event planners to discover and compare music artists using intelligent recommendations and real-time analytics. Powered by vector search and multi-source data integration.</p>
+            <p class="tech-stack">Stack: <span>OpenAI API, PostgreSQL, AWS, Next.js, Python, Google ADK, BandsInTown, Chartmetrics, Social Platform Integrations</span></p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Personalift — AI & SaaS -->
+      <div class="col-md-4 col-sm-6 portfolio-col" data-filter="ai-saas">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="1700ms">
+          <div class="img-wrapper">
+            <img src="images/portfolio/portfolio_project_image.jpg" class="img-fluid" alt="Personalift">
+            <div class="overlay">
+              <div class="buttons">
+                <a target="_blank" href="https://personalift.io/">Live Site</a>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <h4><a href="https://personalift.io/" target="_blank">Personalift</a></h4>
+            <p class="project-desc">AI-powered personalisation platform for gyms and studios that automatically tailors your website for every visitor. Increases trial conversions and membership sign-ups by 15–40%.</p>
+            <p class="tech-stack">Stack: <span>Next.js, Vercel, Supabase, Python</span></p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- LW METHOD — HealthTech -->
+      <div class="col-md-4 col-sm-6 portfolio-col" data-filter="healthcare">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="1800ms">
+          <div class="img-wrapper">
+            <img src="images/portfolio/portfolio_project_image.jpg" class="img-fluid" alt="LW Method">
+            <div class="overlay">
+              <div class="buttons">
+                <a target="_blank" href="https://lwmethod.com/">Live Site</a>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <h4><a href="https://lwmethod.com/" target="_blank">LW METHOD</a></h4>
+            <p class="project-desc">Modern wellness coaching platform integrating habit tracking, guided coaching workflows, and automated WhatsApp communication. Helps users achieve sustainable health and lifestyle improvements.</p>
+            <p class="tech-stack">Stack: <span>React, GSAP, Framer Motion, Facebook Analytics, Stripe, WhatsApp API</span></p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Nexapro — AI & SaaS -->
+      <div class="col-md-4 col-sm-6 portfolio-col" data-filter="ai-saas">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="1900ms">
+          <div class="img-wrapper">
+            <img src="images/portfolio/portfolio_project_image.jpg" class="img-fluid" alt="Nexapro">
+            <div class="overlay">
+              <div class="buttons">
+                <a target="_blank" href="https://app.nexapro.space/">Live Site</a>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <h4><a href="https://app.nexapro.space/" target="_blank">Nexapro</a></h4>
+            <p class="project-desc">All-in-one AI SaaS combining CRM, content generation, SEO optimisation, and campaign management in a unified dashboard. Enables businesses to streamline workflows and improve digital performance.</p>
+            <p class="tech-stack">Stack: <span>React.js, Node.js, MongoDB, Stripe</span></p>
           </figcaption>
         </figure>
       </div>
@@ -369,5 +643,27 @@
 <script src="plugins/slider/slider.js"></script>
 <script src="plugins/facncybox/jquery.fancybox.js"></script>
 <script src="js/main.js"></script>
+<script>
+  (function($) {
+    $(document).on('click', '.btn-filter', function() {
+      $('.btn-filter').removeClass('active');
+      $(this).addClass('active');
+      var filter = $(this).data('filter');
+      var $items = $('#portfolio-grid .portfolio-col');
+      if (filter === 'all') {
+        $items.removeClass('hidden');
+      } else {
+        $items.each(function() {
+          var cats = ($(this).data('filter') || '').split(' ');
+          if (cats.indexOf(filter) !== -1) {
+            $(this).removeClass('hidden');
+          } else {
+            $(this).addClass('hidden');
+          }
+        });
+      }
+    });
+  })(jQuery);
+</script>
 </body>
 </html>

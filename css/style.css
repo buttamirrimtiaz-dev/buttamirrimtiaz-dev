@@ -1140,4 +1140,54 @@ ul.social-icons li {
 #copyright a:hover {
   text-decoration: none;
 }
+/* Portfolio Card — description & tech stack */
+figure figcaption .project-desc {
+  font-size: 13px;
+  color: #666;
+  margin-top: 6px;
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+figure figcaption .tech-stack {
+  font-size: 12px;
+  color: #02bdd5;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+figure figcaption .tech-stack span {
+  font-weight: 400;
+  color: #888;
+}
+
+/* Portfolio Filter Buttons */
+.portfolio-filter {
+  margin-bottom: 35px;
+}
+.btn-filter {
+  display: inline-block;
+  padding: 7px 18px;
+  margin: 4px 3px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: 2px solid #ddd;
+  background: #fff;
+  color: #555;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 250ms;
+}
+.btn-filter:hover,
+.btn-filter.active {
+  background: #02bdd5;
+  border-color: #02bdd5;
+  color: #fff;
+}
+.portfolio-col {
+  transition: opacity 300ms, transform 300ms;
+}
+.portfolio-col.hidden {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
